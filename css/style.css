@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Lato&family=Sacramento&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, #fff, rgba(94, 88, 88, 0.322)) , url("../img/cake1.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.text-box h1 {
+    text-transform: uppercase;
+    color: rgb(230, 202, 206);
+    text-shadow: 0 0 3px #000, 0 0 5px rgb(73, 54, 50);
+}
+
+.heading-main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1.2rem;
+    text-shadow: 0 0 3px #000, 0 0 5px rgb(73, 54, 50);
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.heading-sub {
+    display: block;
+    font-size: 1.6rem;
+    letter-spacing: 1.3rem;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    border-bottom: 0.2rem solid rgb(255, 210, 210); 
+    color: #fff;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+
+}
+
+.btn:hover {
+    background-color: rgba(255, 217, 247, 0.432);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.521);
+    transform: translateY(-5px);
+}
+
+.btn:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.521);
+    transform: translateY(5px);
+}
+
+.main {
+    background-color: rgb(247, 232, 241);
+    height: 1100px;
+    text-align: center;
+    margin-top: -5rem;
+    padding-top: 5rem;
+    clip-path: polygon(41% 3%, 100% 0, 100% 43%, 100% 82%, 67% 91%, 26% 100%, 0 91%, 0% 43%, 0 0);
+}
+
+.main h1 {
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 0 0 3px #000, 0 0 5px rgb(73, 54, 50);
+    text-transform: uppercase;
+}
+
+.gallery {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 75%;
+}
+
+.gallery_photo {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 400px;
+}
+
+.gallery_photo:hover {
+    outline: 1.8rem solid rgba(255, 236, 244, 0.562);
+    transform: scale(1.1);
+    z-index: 30;
+}
+
+.gallery_photo-3 {
+    left: 20%;
+    outline-offset: 1rem;
+    right: 15%;
+    transition: all 0.3s;
+    width: 500px;
+    z-index: 10;
+}
+
+.gallery_photo-2 {
+    top: 45%;
+    left: 35%;
+    top: 25%;
+    transition: all 0.3s;
+    width: 450px;
+    z-index: 10;
+}
+
+.gallery_photo-1 {
+    top: 45%;
+    transition: all 0.3s;
+    width: 450px;
+    z-index: 10;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    height: 200px;
+    color: rgb(175, 129, 160);
+    font-size: 2rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: rgb(175, 129, 160);
+}
+
+.footer ul li:hover, footer ul li a:hover {
+    color: rgb(255, 148, 214);
+    transform: scale(1.2);
+}
